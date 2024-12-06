@@ -2,48 +2,18 @@
     "id": "28786f0bdc78432eb443765c0733b2ab",
     "open_xpd_uuid": "ec3y49fr",
     "date_of_issue": "2024-01-01",
+    "date_validity_ends": "2029-01-01",
     "category": {
         "id": "55fd53a16a52465081678def71932381",
         "name": "BulkMaterials",
-        "display_name": "Bulk Materials",
-        "masterformat": "00 00 00 No Masterformat Code"
+        "display_name": "Bulk Materials"
     },
-    "reviewer": null,
-    "pcr": {
-        "id": "b1e7c145d31e406eb4b00d24bebfa8b4",
-        "name": "No PCR"
-    },
-    "pcr_notes": null,
+
     "ec3_notes": "This is an end-of-life data point and not a true EPD. This data point should be moved to a table specific to EOL data when available.",
     "lca_discussion": null,
     "impacts": {
         "TRACI 2.1": {
             "gwp": {
-                "A1A2A3": {
-                    "mean": 1e-10,
-                    "unit": "kgCO2e",
-                    "rsd": 0.28879058156387305,
-                    "dist": "log-normal"
-                },
-                "A1": null,
-                "A2": null,
-                "A3": null,
-                "A4": null,
-                "A5": null,
-                "B1": null,
-                "B1_years": null,
-                "B2": null,
-                "B2_years": null,
-                "B3": null,
-                "B3_years": null,
-                "B4": null,
-                "B4_years": null,
-                "B5": null,
-                "B5_years": null,
-                "B6": null,
-                "B6_years": null,
-                "B7": null,
-                "B7_years": null,
                 "C1": {
                     "mean": 0.01,
                     "unit": "kgCO2e",
@@ -70,10 +40,6 @@
     },
     "resource_uses": {},
     "output_flows": {},
-    "date_validity_ends": "2029-01-01",
-    "externally_verified": false,
-    "developer": null,
-    "verifier": null,
     "program_operator": {
         "id": "c9864c34b79c42a689fcb754b9427102",
         "name": "NREL",
@@ -99,5 +65,14 @@
     "plant_or_group": {
         "id": "1cadea6d0fed4afe92af8ca01621a5e4",
         "name": "USA"
-    }
+    },
+    "externally_verified": false,
+    "developer": null,
+    "verifier": null,
+    "reviewer": null,
+    "pcr": {
+        "id": "b1e7c145d31e406eb4b00d24bebfa8b4",
+        "name": "No PCR"
+    },
+    "pcr_notes": null
 }

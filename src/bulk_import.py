@@ -21,15 +21,16 @@ payload_cache = {}  # Cache for payloads
 date_stamp = datetime.today().strftime('%y%m%d')  # Date stamp for the file
 
 # Get the API key from the environment
-API_KEY = os.getenv("API_KEY")
-BASE_URL = os.getenv("BASE_URL")
+API_KEY = os.getenv("EC3_API_KEY")
+BASE_URL = os.getenv("EC3_BASE_URL")
 
 # Set the headers
 headers = {"Authorization": f"Bearer {API_KEY}"}
 
+
 def main():
-    """ Create data from table (BREX)"""
-    filepath = os.path.join("data", "fixes", f"brex_eol_241202.xlsx")
+    """ Create data from table """
+    filepath = os.path.join(f"brex_eol_241202.xlsx")
     df = pd.read_excel(filepath, sheet_name="Sheet1", skiprows=0)
     create_brex_data(df, filepath)
 
@@ -45,7 +46,7 @@ def create_brex_data(table, filepath):
             # pause for a random amount of time
             time.sleep(random.randrange(2))
 
-            # create new openEPD object
+            # create new object
             # Get payload from Base EPD
             payload = get_payload(row['base_uuid'])
             print(f'\n{index + 1} | Creating object.')
@@ -82,9 +83,13 @@ def create_brex_data(table, filepath):
                 "TRACI 2.1": {
                     "gwp": {
                         "A1A2A3": {
+                            # EC3 has a validation where this needs to be present
+                            # in the current implementation this is a placeholder non-zero but very small value
+                            # to get around the validator.
                             "mean": 1e-10,
                             "unit": "kgCO2e"
                         },
+                        # Below is where the real C-stage data is loaded
                         "C1": {
                             "mean": row['gwp_c1'] if not pd.isnull(row['gwp_c1']) else None,
                             "unit": "kgCO2e"
@@ -108,7 +113,8 @@ def create_brex_data(table, filepath):
             # Create the EPD with the payload
             new_url = f"https://buildingtransparency.org/api/epds"
             new_response = requests.post(new_url, headers=headers, json=payload)
-            # print(f"\t\tResponse status code: {new_response.status_code}")
+            print(f"\t\tResponse status code: {new_response.status_code}")
+            new_parsed_response = new_response.json() if new_response.content else None
 
             new_uuid = new_parsed_response.get("open_xpd_uuid")
             new_link = new_parsed_response.get("original_ec3_link")
@@ -138,7 +144,9 @@ def get_payload(open_xpd_uuid):
 
     # If not cached, retrieve and cache the payload
     url = f"https://buildingtransparency.org/api/epds/{open_xpd_uuid}"
-    payload = smart_crud(url)
+    response = requests.get(url, headers=headers)
+    print(f"\t\tResponse status code: {response.status_code}")
+    payload = response.json()
 
     attributes_to_copy = ['category', 'manufacturer', 'plant_or_group', 'pcr', 'program_operator']
     copy_dict = {}
@@ -161,15 +169,8 @@ def get_payload(open_xpd_uuid):
     payload_cache[open_xpd_uuid] = payload
     print(f"\nCached {open_xpd_uuid}")
 
-    # Save the payload to the cache
-    directory = os.path.join("data", "epds", "jsons")
-    filename = f"{open_xpd_uuid}_{date_stamp}"
-    save_json(payload, directory, filename)
-
     return payload
 
 
 if __name__ == "__main__":
     main()
-    elapsed_time = time.time() - start_time
-    print(f"Execution time: {humanfriendly.format_timespan(elapsed_time)}")

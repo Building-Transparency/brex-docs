@@ -1,9 +1,257 @@
 [
     {
-        "short_link": "buildingtransparency.org/e/ec3y49frjy",
-        "open_xpd_uuid": "ec3y49fr",
-        "id": "28786f0bdc78432eb443765c0733b2ab",
-        "name": "Untreated Wood, Landfill",
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec3qfnaq",
+        "short_link": "buildingtransparency.org/e/ec3qfnaqs2",
+        "id": "3963bc3065d74aac9613fb4953bde7cf",
+        "name": "Gypsum Drywall, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "-"
+            ],
+            "BREX Material Category": [
+                "Aluminium (Billet)"
+            ]
+        },
+        "open_xpd_uuid": "ec3381sz",
+        "short_link": "buildingtransparency.org/e/ec3381sz02",
+        "id": "835b67484c96496787107eeb3b9f3b16",
+        "name": "Aluminium (Billet), -"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "-"
+            ],
+            "BREX Material Category": [
+                "Aluminium (Billet)"
+            ]
+        },
+        "open_xpd_uuid": "ec3992ka",
+        "short_link": "buildingtransparency.org/e/ec3992katm",
+        "id": "3f283db705fe4bc0bdac3aa3fbc41719",
+        "name": "Aluminium (Billet), -"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Combustion"
+            ],
+            "BREX Material Category": [
+                "Dimensional Lumber"
+            ]
+        },
+        "open_xpd_uuid": "ec36rm6r",
+        "short_link": "buildingtransparency.org/e/ec36rm6rxh",
+        "id": "7d93a5a8c1784eec8db05bb879406319",
+        "name": "Dimensional Lumber, Combustion"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Reuse"
+            ],
+            "BREX Material Category": [
+                "Dimensional Lumber"
+            ]
+        },
+        "open_xpd_uuid": "ec3su7z5",
+        "short_link": "buildingtransparency.org/e/ec3su7z5s4",
+        "id": "e986ed5a8d33404e9afa81316c997c16",
+        "name": "Dimensional Lumber, Reuse"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Untreated Wood"
+            ]
+        },
+        "open_xpd_uuid": "ec3rm7bk",
+        "short_link": "buildingtransparency.org/e/ec3rm7bkyh",
+        "id": "c399952219184c4ca98ace016a1a8d6d",
+        "name": "Untreated Wood, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Reuse"
+            ],
+            "BREX Material Category": [
+                "Timber (Glulam)"
+            ]
+        },
+        "open_xpd_uuid": "ec3zknc7",
+        "short_link": "buildingtransparency.org/e/ec3zknc7yt",
+        "id": "ae182b6ce3d047599cd17630104a51a0",
+        "name": "Timber (Glulam), Reuse"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Timber (Glulam)"
+            ]
+        },
+        "open_xpd_uuid": "ec3ekcgm",
+        "short_link": "buildingtransparency.org/e/ec3ekcgm2d",
+        "id": "93b781ec95a344cb97ff9d65786700df",
+        "name": "Timber (Glulam), Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Incineration"
+            ],
+            "BREX Material Category": [
+                "Timber (Glulam)"
+            ]
+        },
+        "open_xpd_uuid": "ec3dm0q5",
+        "short_link": "buildingtransparency.org/e/ec3dm0q59h",
+        "id": "c69b1bcc698147cbb7a6c7bd4f8a1bd8",
+        "name": "Timber (Glulam), Incineration"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Incineration"
+            ],
+            "BREX Material Category": [
+                "Timber (Glulam)"
+            ]
+        },
+        "open_xpd_uuid": "ec318aat",
+        "short_link": "buildingtransparency.org/e/ec318aath4",
+        "id": "061cd43399cc4f41a73ecec895268fb3",
+        "name": "Timber (Glulam), Incineration"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Reuse"
+            ],
+            "BREX Material Category": [
+                "Timber (CLT)"
+            ]
+        },
+        "open_xpd_uuid": "ec30wtfs",
+        "short_link": "buildingtransparency.org/e/ec30wtfsaj",
+        "id": "396b6c93869c4e459918130642faa38c",
+        "name": "Timber (CLT), Reuse"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Timber (CLT)"
+            ]
+        },
+        "open_xpd_uuid": "ec3xq6gb",
+        "short_link": "buildingtransparency.org/e/ec3xq6gb6d",
+        "id": "649052bf04d54211b05dbd7de5c639dc",
+        "name": "Timber (CLT), Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Timber (CLT)"
+            ]
+        },
+        "open_xpd_uuid": "ec314bf6",
+        "short_link": "buildingtransparency.org/e/ec314bf6hh",
+        "id": "45605521848d46ff931497af49cbfdac",
+        "name": "Timber (CLT), Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Incineration"
+            ],
+            "BREX Material Category": [
+                "Timber (CLT)"
+            ]
+        },
+        "open_xpd_uuid": "ec3f5bjk",
+        "short_link": "buildingtransparency.org/e/ec3f5bjkpc",
+        "id": "5ffd64869f7e4f8b9d8158cb24858752",
+        "name": "Timber (CLT), Incineration"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Steel"
+            ]
+        },
+        "open_xpd_uuid": "ec3g8zq4",
+        "short_link": "buildingtransparency.org/e/ec3g8zq4yj",
+        "id": "5b203f10e6ea44e9ad9dd4a0fc64c6d9",
+        "name": "Steel, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Steel"
+            ]
+        },
+        "open_xpd_uuid": "ec3kpzdj",
+        "short_link": "buildingtransparency.org/e/ec3kpzdj33",
+        "id": "806bb7f0bcec4b88acc659e09502f67c",
+        "name": "Steel, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Steel"
+            ]
+        },
+        "open_xpd_uuid": "ec390g70",
+        "short_link": "buildingtransparency.org/e/ec390g705r",
+        "id": "89ae9f36e3cd40aab822f768e7b79296",
+        "name": "Steel, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Steel"
+            ]
+        },
+        "open_xpd_uuid": "ec3c43t2",
+        "short_link": "buildingtransparency.org/e/ec3c43t2wg",
+        "id": "dfb8e1fc75304ecfb31f68e96c9bd86f",
+        "name": "Steel, Landfill"
+    },
+    {
         "product_classes": {
             "EOL Scenario": [
                 "Landfill"
@@ -11,6 +259,318 @@
             "NREL Category": [
                 "Untreated Wood"
             ]
-        }
+        },
+        "open_xpd_uuid": "ec3y49fr",
+        "short_link": "buildingtransparency.org/e/ec3y49frjy",
+        "id": "28786f0bdc78432eb443765c0733b2ab",
+        "name": "Untreated Wood, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Reuse"
+            ],
+            "BREX Material Category": [
+                "Asphalt Shingles"
+            ]
+        },
+        "open_xpd_uuid": "ec3y4y09",
+        "short_link": "buildingtransparency.org/e/ec3y4y0944",
+        "id": "e1f137a739f44c408ec9ccdbd6ee06c0",
+        "name": "Asphalt Shingles, Reuse"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Incineration"
+            ],
+            "BREX Material Category": [
+                "Asphalt Shingles"
+            ]
+        },
+        "open_xpd_uuid": "ec3r1rau",
+        "short_link": "buildingtransparency.org/e/ec3r1rauba",
+        "id": "e5d7b743f0f041c7acf2db7427ea25a3",
+        "name": "Asphalt Shingles, Incineration"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Asphalt Shingles"
+            ]
+        },
+        "open_xpd_uuid": "ec338tah",
+        "short_link": "buildingtransparency.org/e/ec338tahhd",
+        "id": "7738501f10f14e6e861841467c83bccd",
+        "name": "Asphalt Shingles, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Asphalt Shingles"
+            ]
+        },
+        "open_xpd_uuid": "ec3zcz6c",
+        "short_link": "buildingtransparency.org/e/ec3zcz6cj9",
+        "id": "34900f19cd1e4c76b23f64371b9501d6",
+        "name": "Asphalt Shingles, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec3qeea2",
+        "short_link": "buildingtransparency.org/e/ec3qeea2q6",
+        "id": "06fdd9976e724d16acfa8f8ed3663594",
+        "name": "Concrete, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec3m3q5g",
+        "short_link": "buildingtransparency.org/e/ec3m3q5g7t",
+        "id": "55970d396ef14482b7f86c2862d87733",
+        "name": "Concrete, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec3q3f7p",
+        "short_link": "buildingtransparency.org/e/ec3q3f7p9u",
+        "id": "c6446885eaf64b3a94b70c6756e5e04c",
+        "name": "Concrete, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec3r4n8r",
+        "short_link": "buildingtransparency.org/e/ec3r4n8rc4",
+        "id": "52fe266593864a78b51f59e443d95bd7",
+        "name": "Concrete, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec3punm8",
+        "short_link": "buildingtransparency.org/e/ec3punm8ej",
+        "id": "2bd655a5482a4cdd9321e3b6ffe9f69d",
+        "name": "Concrete, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Reuse"
+            ],
+            "BREX Material Category": [
+                "Concrete"
+            ]
+        },
+        "open_xpd_uuid": "ec38emu5",
+        "short_link": "buildingtransparency.org/e/ec38emu580",
+        "id": "df935d4420034fd38f25b49e91531035",
+        "name": "Concrete, Reuse"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Fiberglass Insulation"
+            ]
+        },
+        "open_xpd_uuid": "ec3y9dg0",
+        "short_link": "buildingtransparency.org/e/ec3y9dg0ra",
+        "id": "fb97b1d426394f2eb1e9a054f0764a67",
+        "name": "Fiberglass Insulation, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Fiberglass Insulation"
+            ]
+        },
+        "open_xpd_uuid": "ec329frx",
+        "short_link": "buildingtransparency.org/e/ec329frx0d",
+        "id": "0bc67cf2c9b44c3fbc7969cf4779f936",
+        "name": "Fiberglass Insulation, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Glass"
+            ]
+        },
+        "open_xpd_uuid": "ec3p8jz4",
+        "short_link": "buildingtransparency.org/e/ec3p8jz46b",
+        "id": "da52478c1eb4442a94b2b3122e2ae756",
+        "name": "Glass, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Glass"
+            ]
+        },
+        "open_xpd_uuid": "ec3c7np6",
+        "short_link": "buildingtransparency.org/e/ec3c7np6w6",
+        "id": "ead14e253b324a258aa619bd5b5e279e",
+        "name": "Glass, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Glass"
+            ]
+        },
+        "open_xpd_uuid": "ec3c0h8j",
+        "short_link": "buildingtransparency.org/e/ec3c0h8j7e",
+        "id": "eab19a9fb6424ad293c2ae3a285b99ea",
+        "name": "Glass, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Glass"
+            ]
+        },
+        "open_xpd_uuid": "ec364as3",
+        "short_link": "buildingtransparency.org/e/ec364as3uj",
+        "id": "16f45540883c43ad880b3c7590b6aff1",
+        "name": "Glass, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Incineration"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec376ctb",
+        "short_link": "buildingtransparency.org/e/ec376ctbyx",
+        "id": "4f9fc6dba9ca47008371a8bca6c46e4c",
+        "name": "Gypsum Drywall, Incineration"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec305j2z",
+        "short_link": "buildingtransparency.org/e/ec305j2z6g",
+        "id": "e9110da45dfb4fe1888df44acf4b30dc",
+        "name": "Gypsum Drywall, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec3227a4",
+        "short_link": "buildingtransparency.org/e/ec3227a4ac",
+        "id": "231c46a36ded4baf863025dbbbae37bb",
+        "name": "Gypsum Drywall, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec330rrx",
+        "short_link": "buildingtransparency.org/e/ec330rrxqq",
+        "id": "805f0f5db5184234b09b76d55e281c68",
+        "name": "Gypsum Drywall, Landfill"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec39dbtt",
+        "short_link": "buildingtransparency.org/e/ec39dbtt6d",
+        "id": "80899479c5b74402b7761726d6f75fb6",
+        "name": "Gypsum Drywall, Recycling"
+    },
+    {
+        "product_classes": {
+            "EOL Scenario": [
+                "Recycling"
+            ],
+            "BREX Material Category": [
+                "Gypsum Drywall"
+            ]
+        },
+        "open_xpd_uuid": "ec39efxc",
+        "short_link": "buildingtransparency.org/e/ec39efxca3",
+        "id": "8b0a53d77c144f9bb2e0537fd84e08ee",
+        "name": "Gypsum Drywall, Recycling"
     }
 ]
