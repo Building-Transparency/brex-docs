@@ -1,0 +1,16 @@
+[
+    {
+        "short_link": "buildingtransparency.org/e/ec3y49frjy",
+        "open_xpd_uuid": "ec3y49fr",
+        "id": "28786f0bdc78432eb443765c0733b2ab",
+        "name": "Untreated Wood, Landfill",
+        "product_classes": {
+            "EOL Scenario": [
+                "Landfill"
+            ],
+            "NREL Category": [
+                "Untreated Wood"
+            ]
+        }
+    }
+]
