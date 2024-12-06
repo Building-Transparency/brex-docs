@@ -122,30 +122,30 @@ This section provides detailed documentation of the fields accessible via the AP
 
 ### Top-Level Fields
 
-| Field Name               | Type     | Description                                                                                                                                                                                                                                                                  |
-|--------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `id`                    | String   | Unique identifier for the data point.                                                                                                                                                                                                                                        |
-| `open_xpd_uuid`         | String   | Unique identifier used in the EC3 tool.                                                                                                                                                                                                                                      |
-| `date_of_issue`         | String   | The issue date of the data point in `YYYY-MM-DD` format.<br/><span style="color:Grey;"><b>Note:</b> This field is informational only and may not represent a valid EPD.</span>                                                                                               |
-| `date_validity_ends`    | String   | The validity end date in `YYYY-MM-DD` format.<br/><span style="color:Grey;"><b>Note:</b> This field is informational only and may not represent a valid EPD.</span>                                                                                                          |
-| `category`              | Object   | Details about the category, including its `id`, `name`, and `display_name`.<br/><span style="color:Grey;"><b>Note:</b> This field is informational only and may not represent a valid EPD.</span>                                                                            |
-| `lca_discussion`        | String | Discussion or notes related to life cycle assessment (LCA).                                                                                                                                                                                                                  |
-| `impacts`               | Object   | Impact assessment results categorized by methods (e.g., TRACI 2.1).                                                                                                                                                                                                          |
-| `resource_uses`         | Object   | Data about resource uses (currently empty).                                                                                                                                                                                                                                  |
-| `output_flows`          | Object   | Data about output flows (currently empty).                                                                                                                                                                                                                                   |
-| `program_operator`      | Object   | Information about the program operator, including `id`, `name`, and `web_domain`.                                                                                                                                                                                            |
-| `name`                  | String   | Name of the EOL scenario.                                                                                                                                                                                                                                                    |
-| `description`           | String   | Description of the EOL scenario.                                                                                                                                                                                                                                             |
-| `product_classes`       | Object   | Classification of the datapoint into various additional categories.                                                                                                                                                                                                          |
-| `original_ec3_link`     | String   | URL to the original data point in the EC3 tool.                                                                                                                                                                                                                              |
-| `declared_unit`         | String   | The declared unit for the data point (e.g., `1 kg`).                                                                                                                                                                                                                         |
-| `manufacturer`          | Object   | Information about the manufacturer, including `id`, `name`, and `web_domain`. <br/><span style="color:Grey;"><b>Note:</b> This is denoting the context for this datapoint in the interim and is used for listing only relevant fields in the `get_list` API function.</span> |
-| `plant_or_group`        | Object   | Details about the plant or group, including `id` and `name`.                                                                                                                                                                                                                 |
-| `externally_verified`   | Boolean  | Indicates whether the data has been externally verified.                                                                                                                                                                                                                     |
-| `developer`             | String | Developer responsible for the data point.                                                                                                                                                                                                                                    |
-| `verifier`              | String | Verifier of the data point.                                                                                                                                                                                                                                                  |
-| `reviewer`              | String | Reviewer of the data point.                                                                                                                                                                                                                                                  |
-| `pcr`                   | Object   | Product category rules (PCR) details, including `id` and `name`.                                                                                                                                                                                                             |
+| Field Name               | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                        |
+|--------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `id`                    | String   | Unique identifier for the data point.                                                                                                                                                                                                                                                                                                                                                                              |
+| `open_xpd_uuid`         | String   | Unique identifier used in the EC3 tool.                                                                                                                                                                                                                                                                                                                                                                            |
+| `original_ec3_link`     | String   | URL to the original data point in the EC3 tool.                                                                                                                                                                                                                                                                                                                                                                    |
+| `name`                  | String   | Name of the EOL scenario.                                                                                                                                                                                                                                                                                                                                                                                          |
+| `description`           | String   | Description of the EOL scenario.                                                                                                                                                                                                                                                                                                                                                                                   |
+| `product_classes`       | Object   | Classification of the datapoint into various additional categories.                                                                                                                                                                                                                                                                                                                                                |
+| `declared_unit`         | String   | The declared unit for the data point (e.g., `1 kg`).                                                                                                                                                                                                                                                                                                                                                               |
+| `lca_discussion`        | String | Discussion or notes related to life cycle assessment (LCA), including data sources and validation information.                                                                                                                                                                                                                                                                                                     |
+| `impacts`               | Object   | Impact assessment results categorized by methods (e.g., TRACI 2.1).                                                                                                                                                                                                                                                                                                                                                |
+| `resource_uses`         | Object   | Data about resource uses (currently empty).                                                                                                                                                                                                                                                                                                                                                                        |
+| `output_flows`          | Object   | Data about output flows (currently empty).                                                                                                                                                                                                                                                                                                                                                                         |
+| `manufacturer`          | Object   | Information about the manufacturer, including `id`, `name`, and `web_domain`. <br/><span style="color:Grey;"><b>Note:</b> This is an interim use of the manufacturer field and is used for listing only relevant data in the `get_list` API function, i.e., to find only the EOL data related to this project, you can filter for the condition where `manufacturer` is `BREX`.</span>                             |
+| `program_operator`      | Object   | Information about the program operator, including `id`, `name`, and `web_domain` <br/><span style="color:Grey;"><b>Note:</b> This is an interim use of the program_operator field, which automatically gives NREL staff with `manage` permissions to be able to fully [manage this data](https://docs.buildingtransparency.org/ec3/managing-data).</span>.                                                         |
+| `plant_or_group`        | Object   | Details about the location where this data is available. In the current set of data, this field is set to `USA` in all cases.                                                                                                                                                                                                                                                                                      |
+| `category`              | Object   | Details about the category where the EOL data is stored. In the interim all EOL data is stored under `Bulk Materials` as not to mix with other EPD data and match declared unit to mass.                                                                                                                                                                                                                           |
+| `date_of_issue`         | String   | The issue date of the data point in `YYYY-MM-DD` format.                                                                                                                                                                                                                                                                                                                                                           |
+| `date_validity_ends`    | String   | The validity end date in `YYYY-MM-DD` format. <br/><span style="color:Grey;"><b>Note:</b> The current data does not have an agreed upon period of validty like EPDs do and can be extended further into the future, however, if there is newer data that is published later to replace some of the existing data, this field should be used to denote the temporal boundary between the related datapoints.</span> |
+| `externally_verified`   | Boolean  | Indicates whether the data has been externally verified. <br/><span style="color:Grey;"><b>Note:</b> The current dataset has not gone through external verification, but this field could communicate if this happens in the future.</span>                                                                                                                                                                        |
+| `developer`             | String | Developer responsible for the data point. <b>Note:</b> Not relevant to current EOL data but could be used in the future.</span>                                                                                                                                                                                                                                                                                    |
+| `verifier`              | String | Verifier of the data point. <br/><span style="color:Grey;"><b>Note:</b> Not relevant to current EOL data but could be used in the future.</span>                                                                                                                                                                                                                                                                   |
+| `reviewer`              | String | Reviewer of the data point. <br/><span style="color:Grey;"><b>Note:</b> Not relevant to current EOL data but could be used in the future.</span>                                                                                                                                                                                                                                                                   |
+| `pcr`                   | Object   | Product category rules (PCR) details, including `id` and `name`. <b>Note:</b> Not relevant to current EOL data but could be used in the future.</span>                                                                                                                                                                                                                                                             |
 
 
 ### Classification Fields
@@ -153,8 +153,31 @@ This section provides detailed documentation of the fields accessible via the AP
 #### `product_classes`
 
 - Contains two additional classification schemes for the data point, including:
-    - `EOL Scenario` (United Nations Standard Products and Services Code).
-    - `BREX Material Category` (Construction Specifications Institute's MasterFormat).
+    - `EOL Scenario` provides a detailed classification of the end-of-life scenario from the list of possible scenarios.
+    - `BREX Material Category` provides a material category for which the data point is relevant.
+
+Note: The `category` field is used to group the data points under the `Bulk Materials` EC3 category, where it is stored, and is different from which categories of materials the data is relevant to.
+
+#### List of EOL scenarios
+
+- `Reuse`
+- `Recycling`
+- `Landfill`
+- `Incineration`
+
+#### List of BREX material categories
+
+- `Aluminium (Billet)`
+- `Asphalt Shingles`
+- `Concrete`
+- `Fiberglass Insulation`
+- `Glass`
+- `Gypsum Drywall`
+- `Steel`
+- `Timber (CLT)`
+- `Timber (Glulam)`
+- `Untreated Wood`
+- `Dimensional Lumber`
 
 ### Detailed Field Breakdown
 
@@ -178,6 +201,34 @@ This section provides detailed documentation of the fields accessible via the AP
 
 - If you need to access a specific impact, you need to describe the entire path to the value (e.g., `impacts['Traci2.1']['gwp']['C4']['mean']`).
 
+Example JSON structure of impacts:
+```json
+{
+    "impacts": {
+        "TRACI2.1": {
+            "gwp": {
+                "C1": {
+                    "mean": 0.0,
+                    "unit": "kgCO2e"
+                },
+                "C2": {
+                    "mean": 0.0,
+                    "unit": "kgCO2e"
+                },
+                "C3": {
+                    "mean": 0.0,
+                    "unit": "kgCO2e"
+                },
+                "C4": {
+                    "mean": 0.0,
+                    "unit": "kgCO2e"
+                }
+            }
+        }
+    }
+}
+```
+
 #### `program_operator`
 | Field Name   | Type   | Description                         |
 |--------------|--------|-------------------------------------|
@@ -196,6 +247,7 @@ This section provides detailed documentation of the fields accessible via the AP
 ### Notes
 
 - Fields marked as `null` indicate the value is currently unavailable.
+- The `product_classes` field provides additional classification data.
 - The `impacts` field provides detailed environmental impact data by life cycle stage.
 - Use the `original_ec3_link` to view the data in the EC3 tool.
 
