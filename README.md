@@ -199,13 +199,13 @@ Note: The `category` field is used to group the data points under the `Bulk Mate
 | `rsd`      | Null/Float | Relative standard deviation (if available).       |
 | `dist`     | String | Distribution type (e.g., `log-normal`).               |
 
-- If you need to access a specific impact, you need to describe the entire path to the value (e.g., `impacts['Traci2.1']['gwp']['C4']['mean']`).
+- If you need to access a specific impact, you need to describe the entire path to the value (e.g., `impacts['TRACI 2.1']['gwp']['C4']['mean']`).
 
 Example JSON structure of impacts:
 ```json
 {
     "impacts": {
-        "TRACI2.1": {
+        "TRACI 2.1": {
             "gwp": {
                 "C1": {
                     "mean": 0.0,
