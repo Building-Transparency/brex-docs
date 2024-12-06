@@ -253,4 +253,4 @@ Example JSON structure of impacts:
 
 --- 
 
-This documentation provides a comprehensive view of the JSON fields accessible via the API, ensuring easy integration and understanding of the data structure.
+End of documentation.
