@@ -122,32 +122,32 @@ This section provides detailed documentation of the fields accessible via the AP
 
 ### Top-Level Fields
 
-| Field Name               | Type     | Description                                                                 |
-|--------------------------|----------|-----------------------------------------------------------------------------|
-| `id`                    | String   | Unique identifier for the data point.                                       |
-| `open_xpd_uuid`         | String   | Unique identifier used in the EC3 tool.                                     |
-| `date_of_issue`         | String   | The issue date of the data point in `YYYY-MM-DD` format.                    |
-| `date_validity_ends`    | String   | The validity end date in `YYYY-MM-DD` format.                               |
-| `category`              | Object   | Details about the category, including its `id`, `name`, and `display_name`. |
-| `ec3_notes`             | String   | Notes about the data point's usage in EC3.                                  |
-| `lca_discussion`        | Null/String | Discussion or notes related to life cycle assessment (LCA).                |
-| `impacts`               | Object   | Impact assessment results categorized by methods (e.g., TRACI 2.1).         |
-| `resource_uses`         | Object   | Data about resource uses (currently empty).                                 |
-| `output_flows`          | Object   | Data about output flows (currently empty).                                  |
-| `program_operator`      | Object   | Information about the program operator, including `id`, `name`, and `web_domain`. |
-| `name`                  | String   | Name of the product or scenario.                                            |
-| `description`           | String   | Description of the product or scenario.                                     |
-| `product_classes`       | Object   | Classification of the product into various categories.                      |
-| `original_ec3_link`     | String   | URL to the original data point in the EC3 tool.                             |
-| `declared_unit`         | String   | The declared unit for the data point (e.g., `1 kg`).                        |
-| `manufacturer`          | Object   | Information about the manufacturer, including `id`, `name`, and `web_domain`. |
-| `plant_or_group`        | Object   | Details about the plant or group, including `id` and `name`.                |
-| `externally_verified`   | Boolean  | Indicates whether the data has been externally verified.                    |
-| `developer`             | Null/String | Developer responsible for the data point.                                  |
-| `verifier`              | Null/String | Verifier of the data point.                                                |
-| `reviewer`              | Null/String | Reviewer of the data point.                                                |
-| `pcr`                   | Object   | Product category rules (PCR) details, including `id` and `name`.            |
-| `pcr_notes`             | Null/String | Notes about the PCR.                                                       |
+| Field Name               | Type     | Description                                                                                                                                                      |
+|--------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `id`                    | String   | Unique identifier for the data point.                                                                                                                            |
+| `open_xpd_uuid`         | String   | Unique identifier used in the EC3 tool.                                                                                                                          |
+| `date_of_issue`         | String   | The issue date of the data point in `YYYY-MM-DD` format.                                                                                                         |
+| `date_validity_ends`    | String   | The validity end date in `YYYY-MM-DD` format.                                                                                                                    |
+| `category`              | Object   | Details about the category, including its `id`, `name`, and `display_name`.                                                                                      |
+| `ec3_notes`             | String   | Notes about the data point's usage in EC3.<br/><span style="color:Grey;"><b>Note:</b> This field is informational only and may not represent a valid EPD.</span> |
+| `lca_discussion`        | Null/String | Discussion or notes related to life cycle assessment (LCA).                                                                                                      |
+| `impacts`               | Object   | Impact assessment results categorized by methods (e.g., TRACI 2.1).                                                                                              |
+| `resource_uses`         | Object   | Data about resource uses (currently empty).                                                                                                                      |
+| `output_flows`          | Object   | Data about output flows (currently empty).                                                                                                                       |
+| `program_operator`      | Object   | Information about the program operator, including `id`, `name`, and `web_domain`.                                                                                |
+| `name`                  | String   | Name of the product or scenario.                                                                                                                                 |
+| `description`           | String   | Description of the product or scenario.                                                                                                                          |
+| `product_classes`       | Object   | Classification of the product into various categories.                                                                                                           |
+| `original_ec3_link`     | String   | URL to the original data point in the EC3 tool.                                                                                                                  |
+| `declared_unit`         | String   | The declared unit for the data point (e.g., `1 kg`).                                                                                                             |
+| `manufacturer`          | Object   | Information about the manufacturer, including `id`, `name`, and `web_domain`.                                                                                    |
+| `plant_or_group`        | Object   | Details about the plant or group, including `id` and `name`.                                                                                                     |
+| `externally_verified`   | Boolean  | Indicates whether the data has been externally verified.                                                                                                         |
+| `developer`             | Null/String | Developer responsible for the data point.                                                                                                                        |
+| `verifier`              | Null/String | Verifier of the data point.                                                                                                                                      |
+| `reviewer`              | Null/String | Reviewer of the data point.                                                                                                                                      |
+| `pcr`                   | Object   | Product category rules (PCR) details, including `id` and `name`.                                                                                                 |
+| `pcr_notes`             | Null/String | Notes about the PCR.                                                                                                                                             |
 
 
 ### Detailed Field Breakdown
